@@ -1,3 +1,6 @@
+# bower
+/ui/components/
+
 # Config
 /config/config.ini
 
