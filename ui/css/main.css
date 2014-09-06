@@ -1,5 +1,13 @@
-
-
+.navbar {
+	background: #f8f8f8; /* for non-css3 browsers */
+	border-bottom:1px solid #CCCCCC;	
+	
+	/*box-shadow: 0px 5px 10px 0px rgba(204, 204, 204, 0.75);*/
+}
+.page-header {
+	margin-top: 8px;
+	font-weight: bold;
+}
 body{
 
 
