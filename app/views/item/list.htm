@@ -25,11 +25,11 @@
 	<a href="{{ htmlspecialchars(trim(@item.url)) }}">
 	<img src="{{ @BASE.'/ui/img/favicon.png' }}" class="favi" alt="" /></a>
 	<a href="{{ htmlspecialchars(trim(@item.url)) }}" class="gridh">{{  trim(@item.title) }}</a>
-	<a href="{{ @BASE.'/i/update/'. @item.tok }}" class="edititem"><i class="icon-edit"></i></a> 
-	<a class="edititem deleteitem" id="itemtok_{{ @item.tok }}"><i class="icon-remove"></i></a>
+	<a href="{{ @BASE.'/i/update/'. @item.tok }}" class="edititem"><i class="fa fa-edit"></i></a> 
+	<a class="edititem deleteitem" id="itemtok_{{ @item.tok }}"><i class="fa fa-times"></i></a>
 
 			<check if="{{  trim(@item.url)!='' }}">
-				<div class="urlitem"><a href="{{ htmlspecialchars(trim(@item.url)) }}">{{  trim(@item.url)  }}</a> <a href="{{ htmlspecialchars(trim(@item.url)) }}" target="_blank" class="external-link"><i class="icon-external-link"></i></a></div>
+				<div class="urlitem"><a href="{{ htmlspecialchars(trim(@item.url)) }}">{{  trim(@item.url)  }}</a> <a href="{{ htmlspecialchars(trim(@item.url)) }}" target="_blank" class="external-link"><i class="fa fa-link"></i></a></div>
 			</check>
 			<check if="{{  trim(@item.note)!='' }}">
 				<div class="dscitem">{{  trim(@item.note)  }}</div>
@@ -74,11 +74,11 @@
 	<a href="{{ htmlspecialchars(trim(@item.url)) }}">
 	<img src="{{ @BASE.'/ui/img/favicon.png' }}" class="favi" alt="" /></a>
 	<a href="{{ htmlspecialchars(trim(@item.url)) }}" class="gridh">{{ trim(@item.title) }}</a> 
-	<a href="{{ @BASE.'/i/update/'. @item.tok }}" class="edititem"><i class="icon-edit"></i></a> 
-	<a class="edititem deleteitem" id="itemtok_{{ @item.tok }}"><i class="icon-remove"></i></a>
+	<a href="{{ @BASE.'/i/update/'. @item.tok }}" class="edititem"><i class="fa fa-edit"></i></a> 
+	<a class="edititem deleteitem" id="itemtok_{{ @item.tok }}"><i class="fa fa-times"></i></a>
 
 			<check if="{{  trim(@item.url)!='' }}">
-				<div class="urlitem"><a href="{{ htmlspecialchars(trim(@item.url)) }}">{{  trim(@item.url)  }}</a> <a href="{{ htmlspecialchars(trim(@item.url)) }}" target="_blank" class="external-link"><i class="icon-external-link"></i></a></div>
+				<div class="urlitem"><a href="{{ htmlspecialchars(trim(@item.url)) }}">{{  trim(@item.url)  }}</a> <a href="{{ htmlspecialchars(trim(@item.url)) }}" target="_blank" class="external-link"><i class="fa fa-link"></i></a></div>
 			</check>
 			<check if="{{  trim(@item.note)!='' }}">
 				<div class="dscitem">{{ trim(@item.note) }}</div>
