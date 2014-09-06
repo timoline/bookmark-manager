@@ -18,8 +18,10 @@
 	</ul>
 
 
-		<form action="{{ @BASE }}/search" method="post">
-            <input class="search-query col col-lg-5 topmfix" placeholder="Search" name="query" value="{{ @q }}" type="text">
+		<form class="navbar-form navbar-left" role="search" action="{{ @BASE }}/search" method="post">
+			<div class="form-group">
+            <input class="form-control search-query" placeholder="Search" name="query" value="{{ @q }}" type="text">
+			</div>
           </form>
 
       <ul class="nv pull-right">
