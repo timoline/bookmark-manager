@@ -6,29 +6,25 @@
 <legend>Update tag</legend>
 
 <!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="title">Tag title</label>
-  <div class="controls">
-    <input id="title" name="title" placeholder="tag name" class="input-xlarge" type="text" value="{{ @POST.title }}">
-    
+<div class="form-group">
+  <label class="col-sm-2 control-label" for="title">Tag title</label>
+  <div class="col-sm-10">
+    <input id="title" name="title" placeholder="tag name" class="form-control" type="text" value="{{ @POST.title }}">
   </div>
- 
+</div>
 
 <!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="title">Tag label</label>
-  <div class="controls">
-    <input id="label" name="label" placeholder="tag label" class="input-xlarge" type="text" value="{{ @POST.label }}">
-    
+<div class="form-group">
+  <label class="col-sm-2 control-label" for="title">Tag label</label>
+  <div class="col-sm-10">
+    <input id="label" name="label" placeholder="tag label" class="form-control" type="text" value="{{ @POST.label }}">
   </div>
-
+</div>
  
-
-
 <!-- Button -->
-<div class="control-group">
-  <label class="control-label" for="singlebutton"></label>
-  <div class="controls">
+<div class="form-group">
+  <label class="col-sm-2 control-label" for="singlebutton"></label>
+  <div class="col-sm-10">
     <input type="hidden" name="tok" value="{{ @POST.tok }}" />
     <input type="hidden" name="update" value="update" />
     <button id="singlebutton" name="singlebutton" class="btn btn-success" type="submit">Update</button>
