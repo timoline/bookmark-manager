@@ -18,8 +18,8 @@
         <th>Url</th>
 		<th>Description</th>
 		<th>Tags</th>
-		<th></th>
-		<th></th>
+		<th>Action</th>
+	
     </tr>
     </thead>
 	<tbody>
@@ -48,8 +48,8 @@
 		</td>
 		
 
-		<td><a href="{{ @BASE.'/i/update/'. @item.tok }}" class="edititem"><i class="fa fa-edit"></i></a> </td>
-		<td><a class="edititem deleteitem" id="itemtok_{{ @item.tok }}"><i class="fa fa-times"></i></a></td>
+		<td><a href="{{ @BASE.'/i/update/'. @item.tok }}" class="btn btn-xs btn-warning"><i class="fa fa-edit"></i></a>
+		<a class="btn btn-xs btn-danger" id="itemtok_{{ @item.tok }}"><i class="fa fa-times"></i></a></td>
 
  	</tr> 
 	</true>

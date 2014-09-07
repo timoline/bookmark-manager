@@ -5,8 +5,7 @@
     <tr>
         <th scope="col">Category</th>
         <exclude><th scope="col" class="editdel">Node</th></exclude>
-        <th scope="col" class="editdel">Options</th>
-
+        <th scope="col" class="editdel">Action</th>
  
     </tr>
     </thead>
@@ -16,7 +15,8 @@
         <tr>
             <td><a href="{{ @BASE.'/c/'. @cat.tok .'/'. @cat.url }}">{{ trim(@cat.name) }}</a></td>
             <exclude><td>{{ trim(@cat.node) }}</td></exclude>
-            <td><a class="btn btn-xs btn-warning" href="{{ @BASE.'/c/update/'. @cat.tok }}">edit</a> <a class="btn btn-xs btn-danger" id="cattok_{{ @cat.tok }}">delete</a></td>
+            <td><a class="btn btn-xs btn-warning" href="{{ @BASE.'/c/update/'. @cat.tok }}"><i class="fa fa-edit"></i></a>
+			<a class="btn btn-xs btn-danger" id="cattok_{{ @cat.tok }}"><i class="fa fa-times"></i></a></td>
         </tr>
     </repeat>
     	<check if="{{ count(@categoires)==0 }}">

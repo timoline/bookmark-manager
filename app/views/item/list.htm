@@ -25,8 +25,8 @@
 	<a href="{{ htmlspecialchars(trim(@item.url)) }}">
 	<img src="{{ @BASE.'/ui/img/favicon.png' }}" class="favi" alt="" /></a>
 	<a href="{{ htmlspecialchars(trim(@item.url)) }}" class="gridh">{{  trim(@item.title) }}</a>
-	<a href="{{ @BASE.'/i/update/'. @item.tok }}" class="edititem"><i class="fa fa-edit"></i></a> 
-	<a class="edititem deleteitem" id="itemtok_{{ @item.tok }}"><i class="fa fa-times"></i></a>
+	<a href="{{ @BASE.'/i/update/'. @item.tok }}" class="btn btn-xs btn-warning pull-right"><i class="fa fa-edit"></i></a> 
+	<a class="btn btn-xs btn-danger pull-right" id="itemtok_{{ @item.tok }}"><i class="fa fa-times"></i></a>
 
 			<check if="{{  trim(@item.url)!='' }}">
 				<div class="urlitem"><a href="{{ htmlspecialchars(trim(@item.url)) }}">{{  trim(@item.url)  }}</a> <a href="{{ htmlspecialchars(trim(@item.url)) }}" target="_blank" class="external-link"><i class="fa fa-link"></i></a></div>
@@ -74,8 +74,8 @@
 	<a href="{{ htmlspecialchars(trim(@item.url)) }}">
 	<img src="{{ @BASE.'/ui/img/favicon.png' }}" class="favi" alt="" /></a>
 	<a href="{{ htmlspecialchars(trim(@item.url)) }}" class="gridh">{{ trim(@item.title) }}</a> 
-	<a href="{{ @BASE.'/i/update/'. @item.tok }}" class="edititem"><i class="fa fa-edit"></i></a> 
-	<a class="edititem deleteitem" id="itemtok_{{ @item.tok }}"><i class="fa fa-times"></i></a>
+	<a href="{{ @BASE.'/i/update/'. @item.tok }}" class="btn btn-xs btn-warning pull-right""><i class="fa fa-edit"></i></a> 
+	<a class="btn btn-xs btn-danger pull-right" id="itemtok_{{ @item.tok }}"><i class="fa fa-times"></i></a>
 
 			<check if="{{  trim(@item.url)!='' }}">
 				<div class="urlitem"><a href="{{ htmlspecialchars(trim(@item.url)) }}">{{  trim(@item.url)  }}</a> <a href="{{ htmlspecialchars(trim(@item.url)) }}" target="_blank" class="external-link"><i class="fa fa-link"></i></a></div>
