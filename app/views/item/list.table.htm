@@ -9,7 +9,7 @@
 
 <div class="col col-lg-12"><!-- start col 1 -->
 
-<table class="table table-hover table-bordered">
+<table class="table table-hover">
     <thead>
     <tr>
         <th></th>
@@ -36,15 +36,17 @@
 		<check if="{{  trim(@item.note)!='' }}">	
 		<td><div class="dscitem">{{  trim(@item.note)  }}</div></td>
 		</check>	
-		<check if="{{  isset( @tgsarray[@item.tok] ) }}">
+		
 		<td>
+		<check if="{{  isset( @tgsarray[@item.tok] ) }}">
 		<div class="taggrid">
 				<repeat group="{{ @tgsarray[@item.tok] }}" value="{{ @t }}">
 					<a href="{{ @BASE.'/t/'. @t.tok .'/'. @t.url }}" class="label label-tag">{{ @t.label }}</a>
 				</repeat>
 		</div>
-		</td>
 		</check>
+		</td>
+		
 
 		<td><a href="{{ @BASE.'/i/update/'. @item.tok }}" class="edititem"><i class="fa fa-edit"></i></a> </td>
 		<td><a class="edititem deleteitem" id="itemtok_{{ @item.tok }}"><i class="fa fa-times"></i></a></td>
