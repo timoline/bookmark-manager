@@ -15,8 +15,8 @@
         <tr>
             <td><a href="{{ @BASE.'/c/'. @cat.tok .'/'. @cat.url }}">{{ trim(@cat.name) }}</a></td>
             <exclude><td>{{ trim(@cat.node) }}</td></exclude>
-            <td><a class="btn btn-xs btn-warning" href="{{ @BASE.'/c/update/'. @cat.tok }}"><i class="fa fa-edit"></i></a>
-			<a class="btn btn-xs btn-danger" id="cattok_{{ @cat.tok }}"><i class="fa fa-times"></i></a></td>
+            <td><a class="btn btn-xs btn-warning" href="{{ @BASE.'/c/update/'. @cat.tok }}"><i class="fa fa-edit fa-fw"></i></a>
+			<a class="btn btn-xs btn-danger" id="cattok_{{ @cat.tok }}"><i class="fa fa-times fa-fw"></i></a></td>
         </tr>
     </repeat>
     	<check if="{{ count(@categoires)==0 }}">
@@ -41,7 +41,7 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-sm-2" for="title">Category</label>
+  <label class="col-sm-2 control-label" for="title">Category</label>
   <div class="col-sm-10">
     <input id="name" name="name" placeholder="category name" class="form-control" type="text">
     
@@ -56,9 +56,9 @@
   <div class="col-sm-10">
     <select id="node" name="node" class="form-control">
 	  <option value="0">select parent</option>
-	<repeat group="{{ @cs }}" value="{{ @c }}">
-      <option value="{{ @c.tok }}">{{ @c.name }}</option>
-	</repeat>
+		<repeat group="{{ @cs }}" value="{{ @c }}">
+		  <option value="{{ @c.tok }}">{{ @c.name }}</option>
+		</repeat>
 
     </select>
   </div>
