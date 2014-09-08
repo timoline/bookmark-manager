@@ -22,7 +22,9 @@ margin: 50px 0 5px 0;
 a.navbar-brand{
 margin-left: 0px;
 }
-
+.navbar-form input {
+	width:75%;
+}
 .footer{
 font-size: 12px;
 color: #ddd;
