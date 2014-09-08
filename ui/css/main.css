@@ -1,3 +1,8 @@
+body{
+
+
+
+}
 .navbar {
 	background: #f8f8f8; /* for non-css3 browsers */
 	border-bottom:1px solid #CCCCCC;	
@@ -8,10 +13,8 @@
 	margin-top: 8px;
 	font-weight: bold;
 }
-body{
-
-
-
+.icon-bar {
+   background-color:#428bca 
 }
 hr{
 margin: 50px 0 5px 0;
@@ -45,6 +48,7 @@ list-style-type:none;
 .pagination{
  
 }
+
 
 /*
 .panelgrig {
