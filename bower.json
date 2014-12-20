@@ -7,7 +7,7 @@
   },
   "preen": {
     "jquery": [
-      "dist/jquery.min.js"
+      "dist/jquery.js"
     ],
     "bootstrap": [
       "dist/js/bootstrap.min.js"

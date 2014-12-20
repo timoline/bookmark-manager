@@ -24,8 +24,8 @@
 	<check if="{{ @ctr }}">
 	<true>
 	<tr>
-		<td><a href="{{ htmlspecialchars(trim(@item.url)) }}"></td>
-		<td><img src="{{ @BASE.'/ui/img/favicon.png' }}" class="favi" alt="" /></a></td>
+		<td><a href="{{ htmlspecialchars(trim(@item.url)) }}"></a></td>
+		<td><a><img src="{{ @BASE.'/ui/img/favicon.png' }}" class="favi" alt=""></a></td>
 		<td><a href="{{ htmlspecialchars(trim(@item.url)) }}" class="gridh">{{  trim(@item.title) }}</a></td>
 		
 		<td>
