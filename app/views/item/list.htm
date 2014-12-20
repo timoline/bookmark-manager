@@ -52,8 +52,10 @@
 		</td>
 		
 
-		<td><a href="{{ @BASE.'/i/update/'. @item.tok }}" class="btn btn-xs btn-warning"><i class="fa fa-edit fa-fw"></i></a>
-		<a class="btn btn-xs btn-danger" id="itemtok_{{ @item.tok }}"><i class="fa fa-times fa-fw"></i></a></td>
+		<td>
+		<a href="{{ @BASE.'/i/update/'. @item.tok }}" class="btn btn-xs btn-warning"><i class="fa fa-edit fa-fw"></i></a>
+		<a class="btn btn-xs btn-danger deleteitem" id="itemtok_{{ @item.tok }}"><i class="fa fa-times fa-fw"></i></a>
+		</td>
 
  	</tr> 
 	</true>

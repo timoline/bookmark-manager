@@ -14,7 +14,7 @@
 		<td><a href="{{ @BASE.'/t/'. @tg.tok .'/'. @tg.url }}" class="gridh">{{ trim(@tg.tag) }}</a> </td>
 		<td><span class="badge">{{ trim(@tg.tagcount) }}</span> 	</td>
 		<td><a href="{{ @BASE.'/t/update/'. @tg.tok }}" class="btn btn-xs btn-warning"><i class="fa fa-edit fa-fw"></i></a> 
-		<a class="btn btn-xs btn-danger" id="tagtok_{{ @tg.tok }}"><i class="fa fa-times fa-fw"></i></a></td>
+		<a class="btn btn-xs btn-danger deletetag" id="tagtok_{{ @tg.tok }}"><i class="fa fa-times fa-fw"></i></a></td>
 	</tr>
 	</repeat>		
 	</tbody>
