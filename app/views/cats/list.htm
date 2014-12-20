@@ -15,8 +15,10 @@
         <tr>
             <td><a href="{{ @BASE.'/c/'. @cat.tok .'/'. @cat.url }}">{{ trim(@cat.name) }}</a></td>
             <exclude><td>{{ trim(@cat.node) }}</td></exclude>
-            <td><a class="btn btn-xs btn-warning" href="{{ @BASE.'/c/update/'. @cat.tok }}"><i class="fa fa-edit fa-fw"></i></a>
-			<a class="btn btn-xs btn-danger deletecat" id="cattok_{{ @cat.tok }}"><i class="fa fa-times fa-fw"></i></a></td>
+            <td>
+				<a class="btn btn-xs btn-warning" href="{{ @BASE.'/c/update/'. @cat.tok }}"><i class="fa fa-edit fa-fw"></i></a>
+				<a class="btn btn-xs btn-danger deletecat" id="cattok_{{ @cat.tok }}"><i class="fa fa-times fa-fw"></i></a>
+			</td>
         </tr>
     </repeat>
     	<check if="{{ count(@categoires)==0 }}">
